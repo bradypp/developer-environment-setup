@@ -1,1 +1,1 @@
-### Ubuntu Setup Script
+# Developer environment setup

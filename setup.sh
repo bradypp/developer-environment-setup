@@ -15,6 +15,11 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo npm install -g spaceship-prompt
 
+# Update config files
+cp ./root/.gitconfig ~/.gitconfig
+cp ./root/.zshrc ~/.zshrc
+source ~/.zshrc
+
 # Nodejs and NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
 nvm install --lts
@@ -32,6 +37,5 @@ sudo npm install -g nodemon
 sudo npm install -g grunt-cli
 sudo npm install -g gulp-cli
 sudo npm install -g gatsby-cli
-sudo npm install -g gatsby-cli
-sudo npm install -g gatsby-cli
+sudo npm install -g netlify-cli
 sudo snap install --classic heroku
