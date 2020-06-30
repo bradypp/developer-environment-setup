@@ -34,7 +34,7 @@ sudo apt-get install ruby-full build-essential zlib1g-dev
 gem install jekyll sass bundler jekyll-minifier jekyll-sitemap
 
 # Install LAMP Stack
-# XAAMP
+# XAAMP / Local by Flywheel
 
 # CLIs & Packages
 npm i -g nodemon
