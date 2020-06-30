@@ -29,8 +29,16 @@ sudo apt install --no-install-recommends yarn
 # Snap
 sudo apt install snapd
 
+# Ruby & Ruby Gems
+sudo apt-get install ruby-full build-essential zlib1g-dev
+gem install jekyll sass bundler jekyll-minifier jekyll-sitemap
+
+# Install LAMP Stack
+# XAAMP
+
 # CLIs & Packages
 npm i -g nodemon
+npm i -g sass
 npm i -g grunt-cli
 npm i -g gulp-cli
 npm i -g gatsby-cli
