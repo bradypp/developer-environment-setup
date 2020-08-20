@@ -7,13 +7,8 @@ sudo apt-get install curl
 # Git
 sudo apt install git-all
 
-# Zsh
-sudo apt-get -y install zsh
-chsh -s $(which zsh)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 # Nodejs and NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install --lts
 
 # Update config files
@@ -29,12 +24,15 @@ sudo apt install --no-install-recommends yarn
 # Snap
 sudo apt install snapd
 
+# Visual Studio Code
+sudo apt install software-properties-common apt-transport-https wget
+https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt install code
+
 # Ruby & Ruby Gems
 sudo apt-get install ruby-full build-essential zlib1g-dev
 gem install jekyll sass bundler jekyll-minifier jekyll-sitemap
-
-# Install LAMP Stack
-# XAAMP / Local by Flywheel
 
 # CLIs & Packages
 npm i -g nodemon
@@ -47,3 +45,8 @@ curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # Cleanup
 sudo apt autoremove
+
+# Zsh
+sudo apt-get -y install zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
