@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Add yarn to the PATH
-# export PATH=$PATH:$HOME/.yarn/bin
+export PATH=$PATH:$HOME/.yarn/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/paul/.oh-my-zsh"
@@ -22,6 +22,10 @@ ZSH_THEME="agnoster"
 # POWERLEVEL9K_DISABLE_RPROMPT=true
 # POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 # POWERLEVEL9K=truncate_beginning
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="▶ "
+# POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+# POWERLEVEL9K_MODE='nerdfont-complete'
 
 DEFAULT_USER=`whoami`
 
@@ -122,7 +126,7 @@ alias ysta="yarn start:all"
 alias ystcl="yarn start:client"
 alias ystsv="yarn start:server"
 alias ysv="yarn server"
-alias ydv="yarn develop"
+alias ydv="yarn dev"
 
 alias gatd="gatsby develop"
 alias gatc="gatsby clean"
@@ -204,3 +208,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
+
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
