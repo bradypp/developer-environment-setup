@@ -46,7 +46,6 @@ sudo apt-get -y install zsh
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-
 # Update config files
 cp ./root/.gitconfig ~/.gitconfig
 cp ./root/.zshrc ~/.zshrc
