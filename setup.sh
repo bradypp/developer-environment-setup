@@ -36,6 +36,7 @@ npm i -g grunt-cli
 npm i -g gulp-cli
 npm i -g gatsby-cli
 npm i -g netlify-cli
+npm i -g vercel
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # Cleanup
